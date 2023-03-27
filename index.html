@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <section class="warp">
+        <!-- 头部区域 -->
+        <header class="header">黑马面面</header>
+        <!-- nav -->
+        <nav>
+            <a href="#">
+                <img src="icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#">
+                <img src="icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#">
+                <img src="icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#">
+                <img src="icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#">
+                <img src="icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- 购物 -->
+        <section class="go">
+            <a href="#">
+                <img src="images/go.png" alt="">
+            </a>
+        </section>
+    </section>
+    <!-- 第一个轮播图 -->
+    <section class="content">
+        <div class="content-hd">
+            <h4>
+                <span><img src="icons/i2.png" alt=""></span>
+                就业指导
+            </h4>
+            <a href="#">更多>></a>
+        </div>
+        <div class="focus">
+            <div class="swiper-container focus_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic.png" alt="">
+                        </a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/ldh.jpg" alt="">
+                        </a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/3.jpg" alt="">
+                        </a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- 把箭头拿出来 -->
+            <!-- Add Pagination -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="content-bd"></div>
+    </section>
+    <!-- 第二个轮播图 -->
+    <section class="content">
+        <div class="content-hd">
+            <h4>
+                <span><img src="icons/i1.png" alt=""></span>
+                充电学习
+            </h4>
+            <a href="#">更多>></a>
+        </div>
+        <div class="study">
+            <div class="swiper mySwiper study_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic1.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic2.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic1.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic2.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic1.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="images/pic2.png" alt="">
+                            <h4>说地道英语，告别中式英语</h4>
+                            <span>156</span>人学习
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content-bd"></div>
+    </section>
+    <!-- 底部 -->
+    <footer class="footer">
+        <a href="#" class="item">
+            <img src="icons/home.png" alt="">
+            <p class="p">首页</p>
+        </a>
+        <a href="#" class="item">
+            <img src="icons/net.png" alt="">
+            <p>面试技巧</p>
+        </a>
+        <a href="#" class="item">
+            <img src="icons/ms.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="#" class="item">
+            <img src="icons/user.png" alt="">
+            <p>个人主页</p>
+        </a>
+    </footer>
+    <script>
+        (function () {
+            var swiper = new Swiper('.focus_fo', {
+                // 显示slider个数
+                slidesPerView: 2,
+                // slider距离
+                spaceBetween: 30,
+                // 要不要放在中间显示
+                centeredSlides: true,
+                loop: true,
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
+                // 左右箭头
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+        (function () {
+            var swiper = new Swiper(".study_fo", {
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true,
+                // },
+            });
+        })()
+    </script>
+</body>
+
+</html>
